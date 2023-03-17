@@ -34,3 +34,6 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
+## Note 
+Received help from peers from the class and from outside forums such as stackoverflow.com 
+Had trouble with the mediaQueries, the right placement of flexboxes throughout the entire document and the placement of images. 
