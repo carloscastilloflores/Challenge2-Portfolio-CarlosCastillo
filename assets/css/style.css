@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ededf6;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height:1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:15px 10% 15px 0;
+    background-color:#32343d;
+}
+
+header h1 {
+    color: #91cdcd;  
+    font-size: 40px;
+    margin:0; 
+    color: #32343d;
+    background-color:#91cdcd;
+    padding: 10px;
+    text-align: end;
+    padding: 5px 10px 5px 60px;
+
+}
+
+nav {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.first-box {
+    max-width: 88%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.second-box {
+    display: flex;
+    margin: 25px 0 0 0; 
+    padding: 10px 0 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:stretch;
+    justify-content: space-between;
+}
+
+.second-box > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid #32343d;
+    padding-right: 15px;
+    border-right: 5px solid rgba(68, 88, 119, 1);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+.box-item {
+    border: 5px solid #91cdcd;
+    color: rgba(49, 52, 61, 1);
+    display: flex;
+    min-height: 150px;
+    max-height: 150px;
+    
+    flex-basis: calc(50% - 1em);
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: .5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+   
+  }
+/* I can't manage to make the div smaller, solved it by adding the > "all but.." 
+and making it fit (flex-basis) according to the mockup  */
+.second-box > div {
+    flex: 0 0 77%;
+} 
+
+
+.box-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.box-item div {
+    background-color: #91cdcd;
+    padding: 8px 10px;
+    
+    
+} 
+
+.box-item h3 {
+    display: block;
+    position: relative;
+    font-size: 1.3rem;
+    margin: 0; 
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+nav ul li {
+    display:inline-block;
+
+}
+
+nav a {
+    color: #91cdcd;
+    padding: 10px 10px; 
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+}
+
+.box1 {
+    background-image: url("../Hero.jpg");
+    display: flex;
+    min-height: 240px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 80px;
+    /*this will affect the box inside of the image*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.box1 div {
+    flex: 0 0 90%;
+}
+
+.box1 h2{
+    background-color: rgba(146, 204, 206, 1);
+    color: rgba(49, 52, 61, 1);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+}
+
+.box-item.photofbr {
+    background-image: url("../Work_FirstPhoto.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.box-item.radial-website {
+    background-image: url("../Radial_Website.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.box-item.corona-challenge{
+    background-image: url("../CoronaCapital_Challenge.png");
+    background-size: cover;
+    background-position: center;
+}
+.box-item.photo-editing {
+    background-image: url("../Editing.png");
+    background-size: cover;
+    background-position: center;
+}
+.box-item.creative-project {
+    background-image: url("../Miguel_Single.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.second-box.contactme {
+    margin-bottom: 30px;
+}
+.second-box.contactme div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px 10px 10px
+}
+.contactme a{
+    color:#32343d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px; 
+    justify-content:space-between;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+    display: inline;
+    justify-content: center;
+
+}
+/* Not working to divide the images after the first image 
+.flex-item::after:first-child{
+    flex-basis: 50%;
+    max-width:200px;
+}
+
+
+  not working correctly, trying to apply it only to nav and anchors
+header nav ul {
+    list-style-type: none;
+    margin-left: 25px;
+    display: flex;
+    padding-top: 30px;
+    margin-right: 50px;;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    float: right;
+}
+
+section h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#91cdcd ;
+    color: #32343d;
+    width: 300px;
+    display: flex;
+    position:absolute;
+    padding: 10px 10px 10px 10px;
+    bottom: 25px;
+    right: 60px;
+    margin: 0;
+  
+
+}
+#aboutme{
+    display:flex;
+}
+section {
+    padding-bottom: 50px;
+}
+section h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color:#445877;
+    display: flex; 
+    position: relative;
+    justify-content: end;
+    text-align: right;
+    border-right: 5px solid #445877;
+    
+    width: 300px;
+    height: 260px;
+    right: 0px;
+    padding: 0 10px 10px;
+
+}
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #445877; 
+    padding: 0 25px 0 25px;
+} 
+
+.img {
+    width: 500px;
+    height:min-content;
+}
+
+#work{
+    display:flex;
+}
+
+card .img-secondaryWork {
+    display: flex; 
+    flex-direction: row;
+
+
+}
+.firstphoto {
+    display:flex;
+    position: relative;
+    width: 850px;
+    left: 30px;
+    border: 8px solid #91cdcd ;
+
+} 
+card .details {
+    position: absolute;
+    background-color: #91cdcd;
+    padding: 10px;
+} 
+*/
