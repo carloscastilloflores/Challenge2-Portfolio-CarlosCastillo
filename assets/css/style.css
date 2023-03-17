@@ -236,10 +236,6 @@ nav a {
     margin-bottom: 10px;
     font-size: 75px;
   }
-    .second-box. p {
-    position: absolute;
-  }
-
     header nav {
     justify-content: center;
   }
@@ -251,7 +247,7 @@ nav a {
 
     .item-container > h2 {
     border-right: none;
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid;
     margin-bottom: 20px;
     padding-bottom: 10px;
      text-align: left;
