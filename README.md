@@ -5,7 +5,7 @@ Portfolio with work samples
 ![127 0 0 1_5500_index html](https://user-images.githubusercontent.com/125534814/225852275-b3b14c53-054d-46f7-afc0-6a7d12f68e00.png)
 
 ## Link to GitHub Pages
-Click [here](https://carloscastilloflores.github.io/march9th-challenge/) to go to my website. 
+Click [here](https://carloscastilloflores.github.io/Challenge2-Portfolio-CarlosCastillo/) to go to my website. 
 
 ## User Story
 
